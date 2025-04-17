@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuxuryDrive Companion</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-black shadow-lg p-5 flex justify-between items-center border-b border-gray-700">
+    <div class="flex items-center space-x-3">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png" alt="Mercedes-Benz Logo" class="h-10 w-10">
+      <h1 class="text-2xl font-bold text-white tracking-wide">LuxuryDrive Companion</h1>
+    </div>
+    <nav>
+      <ul class="flex space-x-6 text-sm text-gray-300">
+        <li><a href="#features" class="hover:text-gray-100">Features</a></li>
+        <li><a href="#testdrive" class="hover:text-gray-100">Test Drive</a></li>
+        <li><a href="#calculator" class="hover:text-gray-100">Finance</a></li>
+        <li><a href="#car-map" class="hover:text-gray-100">Explore Car</a></li>
+        <li><a href="#dashboard" class="hover:text-gray-100">Dashboard</a></li>
+        <li><a href="#testimonials" class="hover:text-gray-100">Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4 bg-gradient-to-br from-black to-gray-900">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-white uppercase tracking-wide">The Ultimate Digital Showroom</h2>
+    <p class="text-lg md:text-xl mb-8 text-gray-400 max-w-2xl mx-auto">Step into innovation with our Mercedes-Benz virtual companion — crafted to elevate the buying experience.</p>
+    <a href="#features" class="bg-white text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition shadow-md">Explore Features</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 px-6 bg-gray-900">
+    <h3 class="text-3xl font-bold text-center mb-10 text-yellow-400">Smart Feature Guide</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-yellow-400 transition">
+        <h4 class="text-xl font-semibold mb-2">Ambient Lighting</h4>
+        <p class="text-gray-400">Customize your driving mood with multicolor ambient lighting controlled digitally.</p>
+      </div>
+      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-yellow-400 transition">
+        <h4 class="text-xl font-semibold mb-2">Massage Seats</h4>
+        <p class="text-gray-400">Enjoy long drives with ergonomic massage seats offering multiple intensity levels.</p>
+      </div>
+      <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-yellow-400 transition">
+        <h4 class="text-xl font-semibold mb-2">MBUX AI Assistant</h4>
+        <p class="text-gray-400">Talk to your car like a friend—MBUX responds to natural language and learns your habits.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Virtual Test Drive -->
+  <section id="testdrive" class="py-16 px-6 bg-gray-800">
+    <h3 class="text-3xl font-bold text-center mb-10 text-yellow-400">Virtual Test Drive</h3>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe class="w-full h-64 md:h-96 rounded-xl shadow-lg"
+        src="https://www.youtube.com/embed/e1OhXSe_lOg"
+        title="Virtual Test Drive"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Interactive Car Map -->
+  <section id="car-map" class="py-16 px-6 bg-black text-white">
+    <h3 class="text-3xl font-bold text-center mb-10 text-white">Explore the Mercedes-Benz</h3>
+    <div class="relative max-w-4xl mx-auto">
+      <img src="benz.jpg" alt="Mercedes-Benz Car" class="rounded-xl shadow-lg w-full">
+      <button onclick="showFeature('headlights')" class="hotspot" style="top: 50%; right: 13%;"></button>
+      <button onclick="showFeature('logo')" class="hotspot" style="top: 50%; right: 25%;"></button>
+      <button onclick="showFeature('steering')" class="hotspot" style="top: 30%; right: 40%;"></button>
+      <button onclick="showFeature('wheels')" class="hotspot" style="top: 75%; left: 42%;"></button>
+    </div>
+    <div id="feature-info" class="mt-6 text-center text-lg text-gray-300 font-light"></div>
+  </section>
+
+
+  <!-- Dashboard -->
+  <section id="dashboard" class="py-16 px-6 bg-gray-900 text-white">
+    <h3 class="text-3xl font-bold text-center mb-10 text-white">Owner Dashboard</h3>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-semibold mb-2">Maintenance</h4>
+        <p class="text-gray-400">Next service due: <strong>12 May 2025</strong><br>Oil Check: Good</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-semibold mb-2">Connected Car</h4>
+        <p class="text-gray-400">Remote Start: Enabled<br>Climate Control: Pre-set to 22°C</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-semibold mb-2">Performance</h4>
+        <p class="text-gray-400">Fuel Level: 74%<br>Tyre Pressure: All optimal</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 px-6 bg-black text-white">
+    <h3 class="text-3xl font-bold text-center mb-10">What Our Drivers Say</h3>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+        <p class="italic text-gray-300">"The LuxuryDrive app made choosing my G-Wagon feel like a VIP experience. Love the interactive features!"</p>
+        <div class="mt-4 text-sm text-gray-400">— Thabo M., Sandton</div>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+        <p class="italic text-gray-300">"The finance tool helped me visualize options quickly. It felt premium—just like the car."</p>
+        <div class="mt-4 text-sm text-gray-400">— Ayanda L., Cape Town</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Finance Calculator -->
+  <section id="calculator" class="py-16 px-6 bg-gray-900">
+    <h3 class="text-3xl font-bold text-center mb-10 text-yellow-400">Finance Calculator</h3>
+    <div class="max-w-xl mx-auto bg-gray-800 p-6 rounded-xl shadow-lg">
+      <form id="financeForm" class="space-y-4">
+        <div>
+          <label class="block mb-1">Car Price (R)</label>
+          <input type="number" id="price" class="w-full p-2 rounded bg-gray-700 text-white" required>
+        </div>
+        <div>
+          <label class="block mb-1">Deposit (R)</label>
+          <input type="number" id="deposit" class="w-full p-2 rounded bg-gray-700 text-white">
+        </div>
+        <div>
+          <label class="block mb-1">Interest Rate (%)</label>
+          <input type="number" id="interest" class="w-full p-2 rounded bg-gray-700 text-white" value="10">
+        </div>
+        <div>
+          <label class="block mb-1">Term (months)</label>
+          <input type="number" id="term" class="w-full p-2 rounded bg-gray-700 text-white" value="60">
+        </div>
+        <button type="submit" class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-300 font-semibold">Calculate</button>
+      </form>
+      <div id="result" class="mt-4 text-lg text-center font-bold text-green-400"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-800 text-gray-400">
+    &copy; 2025 LuxuryDrive Companion | Designed by Anele Mucavele
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

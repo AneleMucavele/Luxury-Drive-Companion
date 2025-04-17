@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a202c;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hotspot for interactive car map */
+  .hotspot {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(222, 14, 14, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hotspot:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 0, 0.8);
+  }
+  
+  /* Header */
+  header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header img {
+    height: 50px;
+  }
+  
+  /* Hero Section */
+  section.hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+  }
+  
+  section.hero h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+  }
+  
+  section.hero p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Features Section */
+  section#features {
+    background-color: #1a202c;
+  }
+  
+  section#features h3 {
+    font-size: 2rem;
+    color: #ffd700;
+  }
+  
+  section#features div {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  section#features div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+  }
+  
+  /* Finance Calculator */
+  section#calculator form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  section#calculator form input,
+  section#calculator form button {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #2d3748;
+    color: #fff;
+    margin-bottom: 12px;
+    border: 1px solid #4a5568;
+  }
+  
+  section#calculator form button {
+    background-color: #f6ad55;
+    border: none;
+    cursor: pointer;
+  }
+  
+  section#calculator form button:hover {
+    background-color: #fbd38d;
+  }
+  
+  #result {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #48bb78;
+  }
+  
