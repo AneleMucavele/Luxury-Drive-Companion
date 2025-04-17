@@ -1,4 +1,4 @@
-LuxuryDrive Companion
+🚗 LuxuryDrive Companion
 LuxuryDrive Companion is an interactive web app that serves as a virtual showroom for Mercedes-Benz vehicles. It allows users to explore car features visually, watch a virtual test drive, calculate finance options, and view an owner's dashboard — all in one sleek, responsive interface.
 
 📦 Features
